@@ -1,0 +1,9 @@
+{
+  "name": "Spesial Jersey of Manchester United",
+  "description": "Exclusive NFT for winning the match betting favoring MU.",
+  "image": "https://violet-obedient-porpoise-293.mypinata.cloud/ipfs/bafkreibh6i3axwmqxhfsa7ypzvu62uze5qkofswazshfnzzvseuaqnb2ge",
+  "attributes": [
+    { "trait_type": "Club", "value": "Manchester United" },
+    { "trait_type": "Type", "value": "Spesial Jersey" }
+  ]
+}

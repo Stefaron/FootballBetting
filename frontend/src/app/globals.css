@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #050A14;
+  --color-acid: #D2F802;
+  --color-cool-white: #F3F4F6;
+  --color-emerald: #10B981;
+  --color-urgent: #EF4444;
+
+  --font-anton: var(--font-anton);
+  --font-space: var(--font-space-grotesk);
+}
+
+@utility font-anton {
+  font-family: var(--font-anton);
+}
+
+@utility font-space {
+  font-family: var(--font-space);
+}
+
+:root {
+  --background: var(--color-midnight);
+  --foreground: var(--color-cool-white);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-space);
+}
+
+/* Custom Utilities */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  color: transparent;
+}
+
+.text-stroke-acid {
+  -webkit-text-stroke: 1px var(--color-acid);
+  color: transparent;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}

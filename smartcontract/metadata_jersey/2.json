@@ -1,0 +1,9 @@
+{
+  "name": "Jersey Chelsea - Winner Badge",
+  "description": "Exclusive NFT for winning the match betting favoring Chelsea.",
+  "image": "https://violet-obedient-porpoise-293.mypinata.cloud/ipfs/bafkreielul6j2jjcof75zunrlf2hmjccmasq7auuq2d4iscs6hurj7f7pa",
+  "attributes": [
+    { "trait_type": "Club", "value": "Chelsea" },
+    { "trait_type": "Type", "value": "Winner Jersey" }
+  ]
+}

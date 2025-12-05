@@ -1,0 +1,9 @@
+{
+  "name": "Jersey Manchester United - Winner Badge",
+  "description": "Exclusive NFT for winning the match betting favoring MU.",
+  "image": "https://violet-obedient-porpoise-293.mypinata.cloud/ipfs/bafkreiahuygdds7smdnmqtm3gjh66gxhlnwdnks7jvv7hvryxdsrrwpvnm",
+  "attributes": [
+    { "trait_type": "Club", "value": "Manchester United" },
+    { "trait_type": "Type", "value": "Winner Jersey" }
+  ]
+}

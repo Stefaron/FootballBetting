@@ -1,0 +1,21 @@
+{
+  "network": "baseSepolia",
+  "timestamp": "2025-12-03T15:49:38.306Z",
+  "contracts": {
+    "MockUSDT": {
+      "address": "0xfa9c1d2ba555b57c270cacff7c24f6f506bfe40d",
+      "args": []
+    },
+    "FootballJersey": {
+      "address": "0x38d231583c9ee391d2c53e1e37de484cb374a22d",
+      "args": []
+    },
+    "MatchVaultFactory": {
+      "address": "0x83bde9df64af5e475db44ba21c1df25e19a0cf9a",
+      "args": [
+        "0xfa9c1d2ba555b57c270cacff7c24f6f506bfe40d",
+        "0x38d231583c9ee391d2c53e1e37de484cb374a22d"
+      ]
+    }
+  }
+}

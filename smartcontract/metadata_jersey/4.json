@@ -1,0 +1,9 @@
+{
+  "name": "Spesial Jersey of Chelsea",
+  "description": "Exclusive NFT for winning the match betting favoring Chelsea.",
+  "image": "https://violet-obedient-porpoise-293.mypinata.cloud/ipfs/bafkreibmm4ghqe75bat5vdtuexuziyqsyrya7dafhjtglso5jjaz77t74e",
+  "attributes": [
+    { "trait_type": "Club", "value": "Chelsea" },
+    { "trait_type": "Type", "value": "Spesial Jersey" }
+  ]
+}
