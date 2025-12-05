@@ -2,13 +2,24 @@
 
 import { useState } from "react";
 import { DockMenu } from "@/components/app/DockMenu";
-import { Arena } from "@/components/app/Arena";
+import { Arena, INITIAL_MATCHES, Match } from "@/components/app/Arena";
 import { LockerRoom } from "@/components/app/LockerRoom";
 import { HallOfFame } from "@/components/app/HallOfFame";
+import { CreateMatch } from "@/components/app/CreateMatch";
 import { Navbar } from "@/components/Navbar";
 
 export default function AppPage() {
   const [activeTab, setActiveTab] = useState("arena");
+  const [matches, setMatches] = useState<Match[]>(INITIAL_MATCHES);
+
+  const handleCreateMatch = (newMatch: Match) => {
+    setMatches([newMatch, ...matches]);
+    setActiveTab("arena");
+  };
+
+  const handleMatchRemove = (id: number) => {
+    setMatches(matches.filter((m) => m.id !== id));
+  };
 
   return (
     <main className="min-h-screen bg-midnight text-cool-white selection:bg-acid selection:text-midnight relative overflow-hidden">
@@ -24,7 +35,19 @@ export default function AppPage() {
       <Navbar />
 
       <div className="relative z-10 pt-32 px-4 md:pl-24 pb-32">
-        {activeTab === "arena" && <Arena />}
+        {activeTab === "arena" && (
+          <Arena 
+            matches={matches} 
+            onCreateMatchClick={() => setActiveTab("create-match")} 
+            onMatchRemove={handleMatchRemove}
+          />
+        )}
+        {activeTab === "create-match" && (
+          <CreateMatch 
+            onMatchCreate={handleCreateMatch} 
+            onCancel={() => setActiveTab("arena")} 
+          />
+        )}
         {activeTab === "locker" && <LockerRoom />}
         {activeTab === "hall" && <HallOfFame />}
         {activeTab === "settings" && (

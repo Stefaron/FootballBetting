@@ -3,6 +3,7 @@ import { Space_Grotesk, Anton } from "next/font/google";
 import "./globals.css";
 import '@rainbow-me/rainbowkit/styles.css';
 import { Providers } from "./providers";
+import { Toaster } from "sonner";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Providers>
             {children}
+            <Toaster position="bottom-right" richColors theme="dark" />
         </Providers>
       </body>
     </html>
