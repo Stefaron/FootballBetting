@@ -65,8 +65,8 @@ contract MatchVault is ReentrancyGuard, Ownable {
         token = IERC20(_token);
         nft = FootballJersey(_nft);
         matchStartTime = _matchStartTime;
-        // Deadline set 7 hari sebelum match (604800 detik)
-        depositDeadline = _matchStartTime - 7 days;
+        // Deadline set to match start time for DEMO purposes (originally - 7 days)
+        depositDeadline = _matchStartTime;
         result = MatchResult.Pending;
     }
 
